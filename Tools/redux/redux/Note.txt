@@ -1,0 +1,9 @@
+//โดยจะเริ่มตั้งแต่//
+1. การติดตั้ง Library เพิ่มเติม
+npm install redux react-redux redux-devtools-extension
+2. การสร้าง Store หรือ Reducer 
+3. การดึงข้อมูลใน Store มาใช้งานด้วย useSelector
+4. การเปลี่ยนแปลงค่าใน Store ด้วย useDispatch
+
+// อีกแบบ //
+1. npm install react-redux

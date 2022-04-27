@@ -1,10 +1,11 @@
 import './App.css'
 import Hooks from './Component/Hooks';
+import { Counter } from './features/counter/Counter';
 
 function App() {
   return (
     <div className="App">
-      <Hooks></Hooks>
+      <Counter></Counter>
     </div>
   );
 }

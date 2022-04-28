@@ -1,5 +1,10 @@
 import './App.css'
-import { atom } from "recoil";
+import { atom } from "recoil"; //
+
+const countAtom = atom({
+  key: 'count-atom',
+  default: 15,
+})
 
 function App() {
   return (

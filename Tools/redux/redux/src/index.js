@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 
-// create principle of redux
+// เครื่องมือจัดการ
 import { createStore } from 'redux';
 import { Provider } from 'react-redux'; //เอาไว้ครอบ Root-component เพื่อให้คนอื่นเข้าถึง Store
 import { composeWithDevTools } from 'redux-devtools-extension'; 

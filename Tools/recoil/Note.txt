@@ -1,0 +1,10 @@
+Fist install package recoil
+1. npm install recoil
+
+
+
+recoil คือ ตัวจัดการ Global State ถูกพัฒนามาจาก Redux 
+ข้อดี
+\_ 
+
+atom เก็บ State ภายใน React App เทียบเท่า State 1 ตัว // การใช้ atom เหมือยการใช้ useState

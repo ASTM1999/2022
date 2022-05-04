@@ -3,9 +3,11 @@ import { atom, useRecoilState, useRecoilValue, selector, useResetRecoilState} fr
 // atom คล้าย state 
 // useRecoilState มาแทน useState 
 
+
+// creat atom
 const countAtom = atom({
-  key: 'count-atom',
-  default: 5,
+  key: 'count-atom',  // unique ID   
+  default: 5,         // ค่ากำหนดเริ่มต้น
 })
 
 const fontSizeSelector = selector({

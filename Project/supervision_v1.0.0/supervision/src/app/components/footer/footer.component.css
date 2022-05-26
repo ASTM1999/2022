@@ -1,27 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  background-color: #18191f;
-}
-
-
-.container {
-  position: fixed;
-  top: 50%;
+.textarea {
+  position:fixed;
+  top: 90%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 10%;
-  width: 100%;
-  height: 100%;
-
+  transform: translate(-30%,-50%);
+  
 }
-
+body {
+  width: 100%;
+}
 #fonts,#fontu,#fontp,#fonte,#fontr,#fontv,#fonti,#fonts2,#fonti2,#fonto,#fontn
 {
-  font-size: 3em;
+  font-size: 2.5em;
   background-color: #18191f;
   color: #fff;
   box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,

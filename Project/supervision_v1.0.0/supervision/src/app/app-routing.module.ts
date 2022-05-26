@@ -16,7 +16,7 @@ import { UserpageComponent } from "./components/userpage/userpage.component";
 
 //กำหนด path 
 const routes: Routes = [
-  {path: 'login', component:LoginComponent},
+  {path: '', component:LoginComponent},
   {path: 'adminpage', component:AdminpageComponent},
   {path: 'footer', component:FooterComponent},
   {path: 'header', component:HeaderComponent},

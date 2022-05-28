@@ -1,20 +1,30 @@
-
-<body>
-</body>
-<div class="login-box">
+<app-backgroud></app-backgroud>
+<div class="register-box">
     <h2>Register</h2>
     <form>
+      <div class="user-box">
+        <!-- <label>Role</label> -->
+        <select type="combobox" id="combobox">
+          <option value="student">Role</option>
+          <option value="student">Student</option>
+          <option value="teacher">Lecturer</option>
+        </select>
+      </div>
+      <br>
+      <div class="user-box">
+        <!-- <label>Advisor</label> -->
+        <select type="combobox" id="combobox">
+          <option value="student">Advisor ตัวนี้ต้องดึงจาก DataBase</option>
+        </select>
+      </div>
+      <br>
       <div class="user-box">
         <input type="text" name="" required="">
         <label>Full name</label>
       </div>
       <div class="user-box">
-        <input type="password" name="" required="">
-        <label>Student Identification Number</label>
-      </div>
-      <div class="user-box">
         <input type="text" name="" required="">
-        <label>Advisor</label>
+        <label>Student Identification Number</label>
       </div>
       <div class="user-box">
         <input type="text" name="" required="">

@@ -16,6 +16,9 @@ import { MinigameComponent } from './components/minigame/minigame.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BackgroudComponent } from './components/backgroud/backgroud.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
+import { AgendaComponent } from './components/agenda/agenda.component';
+import { TestingComponent } from './components/testing/testing.component';
 
 @NgModule({
   imports: [
@@ -34,7 +37,10 @@ import { BackgroudComponent } from './components/backgroud/backgroud.component';
     MinigameComponent,
     SidebarComponent,
     HeaderComponent,
-    BackgroudComponent
+    BackgroudComponent,
+    CalendarComponent,
+    AgendaComponent,
+    TestingComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

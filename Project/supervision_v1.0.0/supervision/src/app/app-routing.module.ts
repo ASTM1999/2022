@@ -12,6 +12,8 @@ import { RegisterComponent } from "./components/register/register.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { TeacherpageComponent } from "./components/teacherpage/teacherpage.component";
 import { UserpageComponent } from "./components/userpage/userpage.component";
+import { AgendaComponent } from "./components/agenda/agenda.component";
+import { NgclassComponent } from "./components/ngclass/ngclass.component";
 
 
 //กำหนด path 
@@ -24,7 +26,10 @@ const routes: Routes = [
   {path: 'register', component:RegisterComponent},
   {path: 'sidebar', component:SidebarComponent},
   {path: 'teacherpage', component:TeacherpageComponent},
-  {path: 'user', component:UserpageComponent},
+  {path: 'userpage', component:UserpageComponent},
+  {path: 'agenda', component:AgendaComponent},
+  {path: 'ngclass', component:NgclassComponent},
+  
 ]
 
 

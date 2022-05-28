@@ -1,0 +1,10 @@
+// Component ที่ได้ทำเสร็จแล้ว
+
+footer : finish
+login : finish
+
+// เพิ่มเติม
+register :
+
+// ยังไม่เสร็จ
+ทรืร

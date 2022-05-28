@@ -2,7 +2,6 @@ html {
     height: 100%;
   }
   body {
-    height:120px;
     margin:0;
     padding:0;
     font-family: sans-serif;
@@ -12,9 +11,10 @@ html {
     position: absolute;
     left: 30%;
   }
-  .register-box {
+  
+  .agenda-box {
     position: absolute;
-    top: 45%;
+    top: 43%;
     left: 50%;
     width: 400px;
     padding: 40px;
@@ -25,31 +25,18 @@ html {
     border-radius: 10px;
   }
   
-  .com-box{
-    padding: 20px;
-  }
-  #combobox{
-    font-family: sans-serif;
-    color: #fff;
-    background-color:black;
-    padding: 12px;
-    width: 320px;
-    text-align:start;
-    border-radius: 5px;
-  }
-
-  .register-box h2 {
+  .agenda-box h2 {
     margin: 0 0 30px;
     padding: 0;
     color: #fff;
     text-align: center;
   }
   
-  .register-box .user-box {
+  .agenda-box .user-box {
     position: relative;
   }
   
-  .register-box .user-box input {
+  .agenda-box .user-box input {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -60,7 +47,7 @@ html {
     outline: none;
     background: transparent;
   }
-  .register-box .user-box label {
+  .agenda-box .user-box label {
     position: absolute;
     top:0;
     left: 0;
@@ -71,15 +58,15 @@ html {
     transition: .5s;
   }
   
-  .register-box .user-box input:focus ~ label,
-  .register-box .user-box input:valid ~ label {
+  .agenda-box .user-box input:focus ~ label,
+  .agenda-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
     color: #03e9f4;
     font-size: 12px;
   }
   
-  .register-box form a {
+  .agenda-box form a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -93,7 +80,7 @@ html {
     letter-spacing: 4px
   }
   
-  .register-box a:hover {
+  .agenda-box a:hover {
     background: #03e9f4;
     color: #fff;
     border-radius: 5px;
@@ -103,12 +90,12 @@ html {
                 0 0 100px #03e9f4;
   }
   
-  .register-box a span {
+  .agenda-box a span {
     position: absolute;
     display: block;
   }
   
-  .register-box a span:nth-child(1) {
+  .agenda-box a span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -126,7 +113,7 @@ html {
     }
   }
   
-  .register-box a span:nth-child(2) {
+  .agenda-box a span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -145,7 +132,7 @@ html {
     }
   }
   
-  .register-box a span:nth-child(3) {
+  .agenda-box a span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -164,7 +151,7 @@ html {
     }
   }
   
-  .register-box a span:nth-child(4) {
+  .agenda-box a span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;

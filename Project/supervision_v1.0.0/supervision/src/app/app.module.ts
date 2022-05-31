@@ -19,11 +19,20 @@ import { BackgroudComponent } from './components/backgroud/backgroud.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { AgendaComponent } from './components/agenda/agenda.component';
 import { TestingComponent } from './components/testing/testing.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//solution issue error tag mat-form-field
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+//impoer matetial Angular
+import {MaterialExampleModule} from 'src/material.module'
+
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialExampleModule,
   ],
   declarations: [
     AppComponent,
@@ -42,6 +51,7 @@ import { TestingComponent } from './components/testing/testing.component';
     AgendaComponent,
     TestingComponent
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

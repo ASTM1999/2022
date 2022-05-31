@@ -20,7 +20,19 @@
         <input type="text" name="" required="">
         <label>What the plan to do before next meeting</label>
       </div>
-      <a id="send" href="">
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Choose a date</mat-label>
+          <input matInput [matDatepicker]="picker">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+      
+
+
+      <a id="send" href="userpage">
         <span></span>
         <span></span>
         <span></span>
@@ -29,5 +41,6 @@
       </a>
     </form>
   </div>
-  <!-- <app-footer></app-footer> -->
   
+<!-- javascript -->
+<script src="/src/app/components/agenda/agenda.component.js"></script>

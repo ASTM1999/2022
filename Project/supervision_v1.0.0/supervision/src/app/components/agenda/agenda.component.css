@@ -14,9 +14,9 @@ html {
   
   .agenda-box {
     position: absolute;
-    top: 43%;
-    left: 50%;
-    width: 400px;
+    top: 50%;
+    left: 60%;
+    width: 550px;
     padding: 40px;
     transform: translate(-50%, -50%);
     background: rgba(0,0,0,.5);
@@ -169,4 +169,34 @@ html {
       bottom: 100%;
     }
   }
+
+  ::ng-deep.mat-form-field-label {
+    /*change color of label*/
+    color: white !important;
+    
+  }
+   
+  ::ng-deep.mat-form-field {
+    /*change color of label*/
+    color: white !important;
+  }
   
+  ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: white !important;
+    border-bottom: 2px solid #fff;
+  } 
+  ::ng-deep.mat-form-field .mat-hint {
+    color: #fff !important;
+  } 
+  ::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+    background-color: rgb(67, 22, 247) !important;;
+  }
+
+  mat-datepicker-toggle {
+    color: white !important;
+  }
+  ::ng-deep.input matInput{
+    color: white;
+  }

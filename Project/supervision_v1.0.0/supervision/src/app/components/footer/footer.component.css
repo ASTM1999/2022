@@ -1,9 +1,8 @@
 .textarea {
   position:fixed;
-  top: 90%;
+  top: 135%;
   left: 50%;
   transform: translate(-27%,-50%);
-  
 }
 body {
   width: 100%;

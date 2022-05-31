@@ -8,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
 
   constructor() { }
-
+  buttonAgenda:string='Agenda';
+  visibleAgenda:boolean=false;
+  showAgenda(){
+    this.visibleAgenda = this.visibleAgenda?true:true;
+    this.buttonAgenda=this.visibleAgenda?"Agenda":"Agenda";
+  }
+  
   ngOnInit(): void {
   }
 

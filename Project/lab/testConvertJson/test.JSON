@@ -1,0 +1,24 @@
+{
+    "participants": [
+        {
+            "name": "Philip Marlowe"
+        },
+        {
+            "name": "Terry Lennox"
+        }
+    ],
+    "messages": [
+        {
+            "sender_name": "Philip Marlowe",
+            "timestamp_ms": 1546857175,
+            "content": "Meet later? \u00F0\u009F\u0098\u008A",
+            "type": "Generic"
+        },
+        {
+            "sender_name": "Terry Lennox",
+            "timestamp_ms": 1546857177,
+            "content": "Excellent!! \u00f0\u009f\u0092\u009a",
+            "type": "Generic"
+        }
+    ]
+}

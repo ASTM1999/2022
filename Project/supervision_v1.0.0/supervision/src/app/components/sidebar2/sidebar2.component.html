@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <header>
+  </header>
+  <aside>
+    <p> Menu </p>
+    <!-- <a href="javascript:void(0)" type="button" (click)="showAgenda()">{{buttonAgenda}}
+    </a> -->
+    <a href="javascript:void(0)" type="button" >
+      Approve
+    </a>
+    <a href="javascript:void(0)" type="button" >
+      Profile
+    </a>
+    <a href="javascript:void(0)">
+      Calendar
+    </a>
+    <a href="javascript:void(0)">
+      Add Student
+    </a>
+    <a href="javascript:void(0)">
+      History
+    </a>
+    <a href="">
+      Logout
+    </a>
+  </aside>
+  <app-agenda *ngIf="visibleAgenda"></app-agenda>
+</html>

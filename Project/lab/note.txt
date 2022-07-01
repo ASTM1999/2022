@@ -1,0 +1,6 @@
+คำสั่ง Start && Stop mongoDB
+brew services start mongodb-community@5.0
+
+Check mongoDB run on System
+ps -ef | grep mongod | grep -v grep | wc -l | tr -d ' '
+#หมายเหตุเราสามารถที่จะเข้าไปเช็ตหาข้อมูลเพิ่มเติมได้ที่ Profile B613381 Chrome

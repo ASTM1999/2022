@@ -20,11 +20,13 @@ import { CalendarComponent } from './components/calendar/calendar.component';
 import { AgendaComponent } from './components/agenda/agenda.component';
 import { TestingComponent } from './components/testing/testing.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 //solution issue error tag mat-form-field
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 //impoer matetial Angular
-import {MaterialExampleModule} from 'src/material.module'
+import {MaterialExampleModule} from 'src/material.module';
+import { Sidebar2Component } from './components/sidebar2/sidebar2.component'
 
 
 @NgModule({
@@ -33,6 +35,7 @@ import {MaterialExampleModule} from 'src/material.module'
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialExampleModule,
+    HttpClientModule,
   ],
   declarations: [
     AppComponent,
@@ -49,7 +52,8 @@ import {MaterialExampleModule} from 'src/material.module'
     BackgroudComponent,
     CalendarComponent,
     AgendaComponent,
-    TestingComponent
+    TestingComponent,
+    Sidebar2Component
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],

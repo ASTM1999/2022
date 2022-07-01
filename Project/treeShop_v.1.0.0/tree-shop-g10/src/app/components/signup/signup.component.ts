@@ -11,35 +11,35 @@ import { CartService } from 'src/app/services/cart.service';
 })
 export class SignupComponent implements OnInit {
   signupForm = new FormGroup({
-    name : new FormControl('',[Validators.required]),
-    username: new FormControl('',[Validators.required,Validators.email]),
-    password: new FormControl('',[Validators.required]),
+    name: new FormControl('', [Validators.required]),
+    username: new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [Validators.required]),
     role: new FormControl('')
   });
-  constructor(private router: Router,private signup: SignupService,private cart:CartService,private address:AddressService) { }
+  constructor(private router: Router, private signup: SignupService, private cart: CartService, private address: AddressService) { }
   ngOnInit(): void {
   }
-  register(){  
-    console.log("this " ,this.signupForm.value);
-    
+  register() {
+    console.log("this ", this.signupForm.value);
+
     this.signup.signups(this.signupForm.value).subscribe(
       data => {
-        if(data.message){  
+        if (data.message) {
           console.log(data.data);
-          this.cart.addCart(data.data).subscribe( 
+          this.cart.addCart(data.data).subscribe(
             data => {
               console.log(data);
             },
             err => {
-               console.log(err);   
+              console.log(err);
             }
           )
           let playload = {
-            firstname : '',
-            lastname : '',
-            address : '',
-            phonenumber:'',
-            userId : data.data._id
+            firstname: '',
+            lastname: '',
+            address: '',
+            phonenumber: '',
+            userId: data.data._id
           }
           this.address.addAddress(playload).subscribe(
             data => {
@@ -50,7 +50,7 @@ export class SignupComponent implements OnInit {
             }
           )
           this.router.navigate(['/signin']);
-        }else{
+        } else {
           alert('Cannot Sign up');
         }
       },
@@ -59,15 +59,8 @@ export class SignupComponent implements OnInit {
         alert('Cannot Sign up');
       });
   }
-
-  
-  get fromdata(){
+  get fromdata() {
     console.log(this.signupForm.controls);
-    
-
     return this.signupForm.controls
   }
-
-  
-  
 }

@@ -25,38 +25,7 @@ export class RegisterComponent implements OnInit {
   getUser() {
     return this.local.get('user').result.username
   }
-  // register() {
-  //   console.log("this ", this.signupForm.value);
-  //   this.signup.signups(this.signupForm.value).subscribe(
-  //     data => {
-  //       if (data.message) {
-  //         console.log(data.data);
-          
-  //         let playload = {
-  //           firstname: '',
-  //           lastname: '',
-  //           address: '',
-  //           phonenumber: '',
-  //           userId: data.data._id
-  //         }
-  //         this.address.addAddress(playload).subscribe(
-  //           data => {
-  //             console.log(data);
-  //           },
-  //           err => {
-  //             console.log(err);
-  //           }
-  //         )
-  //         this.router.navigate(['/signin']);
-  //       } else {
-  //         alert('Cannot Sign up');
-  //       }
-  //     },
-  //     err => {
-  //       console.log(err);
-  //       alert('Cannot Sign up');
-  //     });
-  // }
+ 
   get fromdata() {
     console.log(this.signupForm.controls);
     return this.signupForm.controls

@@ -11,7 +11,7 @@ const addressSchema = Schema({
     phonenumber:String,
     address:String
 },{
-    coolection:'addresses'
+    coolection:'user'
 })
 let Address
 try{

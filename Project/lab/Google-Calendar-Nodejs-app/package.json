@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/in"
+    "start": "node src/index.ts"
   },
   "author": "Anusorn Sriprom",
   "license": "MIT",

@@ -1,5 +1,6 @@
-const { google } = require('googleapis')
 
+
+const { google } = googleapis
 const { OAuth2 } = google.auth
 
 const oAuth2Client = new OAuth2(
@@ -9,33 +10,35 @@ const oAuth2Client = new OAuth2(
 
 oAuth2Client.setCredentials({
     refresh_token: 
-        '1//043Re-w3hlfEUCgYIARAAGAQSNwF-L9IrcY18396XDgmmLrSmt-96xgB_TNeyLQq7YyhmY5914jbaQmMVVVmniTHPutXcqnIq7qQ',
+        '1//049l0vQKj54-wCgYIARAAGAQSNwF-L9IrmG_Mvzh_rH28AwFbXy-BQqka1A1Gm1KgA_tMLBHgt9ffPdzSzVMTfPrStdt_CJvMRak',
 })
 
 const calendar = google.calendar({ version: 'v3', auth: oAuth2Client })
 
 
-const datTest = 5
+// const datTest = 2
 
-const eventStartTime = new Date()
-eventStartTime.setDate(eventStartTime.getDate() + datTest)
-eventStartTime.setHours(eventStartTime.getHours())
+// const eventStartTime = new Date()
+// // eventStartTime.originalStartTime.date(1999-07-11)
+// // eventStartTime.getMinutes(eventStartTime.getMinutes()+200)
 
-const eventEndTime = new Date()
-eventEndTime.setDate(eventEndTime.getDate() + datTest)
-eventEndTime.setMinutes(eventEndTime.getMinutes() + 60)
+// const eventEndTime = new Date()
+// eventEndTime.originalStartTime.date
+// eventEndTime.setDate(eventEndTime.getDay()+datTest)
+// // eventEndTime.setMinutes(eventEndTime.getMinutes() + 60)
+const Tdate = "2022-07-11"
 
 const event = {
-    summary: `Meeting with David`,
+    summary: `Meeting Project`,
     location: `Google Meetings`,
-    description: `Meet with David to talk about the new client project and how to integrate the calendar for booking.`,
+    description: ``,
     colorId: 1,
     start: {
-      dateTime: eventStartTime,
+      date: Tdate,
       timeZone: 'UTC',
     },
     end: {
-      dateTime: eventEndTime,
+      date: Tdate,
       timeZone: 'UTC',
     },
   }
@@ -44,8 +47,8 @@ const event = {
   calendar.freebusy.query(
     {
       resource: {
-        timeMin: eventStartTime,
-        timeMax: eventEndTime,
+        // timeMin: eventStartTime,
+        // timeMax: eventEndTime,
         timeZone: 'UTC',
         items: [{ id: 'primary' }],
       },
@@ -73,4 +76,5 @@ const event = {
       // If event array is not empty log that we are busy.
       // return console.log(`Sorry I'm busy...`)
     }
-  )
+  ) 
+  // check value event primary key?

@@ -1,1 +1,0 @@
-var uri = 'mongodb://myUserAdmin:12321@localhost:27017/mydb';

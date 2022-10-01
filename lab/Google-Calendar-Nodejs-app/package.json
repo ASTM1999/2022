@@ -1,0 +1,14 @@
+{
+  "name": "google-calendar-nodejs-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.ts"
+  },
+  "author": "Anusorn Sriprom",
+  "license": "MIT",
+  "dependencies": {
+    "googleapis": "^104.0.0"
+  }
+}
